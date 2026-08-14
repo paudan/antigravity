@@ -544,7 +544,6 @@ main() {
   install_deps_debian
   local tmp_parent="${TMPDIR:-/var/tmp}"
   mkdir -p "$tmp_parent"
-  local tmpdir
   tmpdir=$(mktemp -d "$tmp_parent/$PROJECT_NAME.XXXXXX")
   trap 'rm -rf "$tmpdir"' EXIT
   local page
